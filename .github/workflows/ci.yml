@@ -64,3 +64,5 @@ jobs:
               '${{ needs.test-diagnostics.result }}' -ne 'success') {
             exit 1
           }
+
+# fork verification: re-register this workflow on the fork (no behavior change)
